@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+main {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: row;
+  max-width: 60%;
+  min-height: 70%;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  overflow: hidden;
+}
+
+img {
+  max-width: 75%;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section h1 {
+  font-family: "Poppins", sans-serif;
+  color: #F2AF05;
+  font-size: 2.7rem;
+  margin-bottom: 15px;
+}
+section h2 {
+  font-family: "Poppins", sans-serif;
+  color: #2D4583;
+  font-size: 2.4rem;
+  align-self: flex-start;
+  padding: 0px 70px;
+  margin-bottom: 5px;
+}
+
+section input {
+  border: 1px solid #B5B5B5;
+  border-radius: 7px;
+  padding: 10px 7px;
+  height: 33px;
+  width: 100%;
+}
+
+form {
+  width: 100%;
+}
+
+div {
+  width: 100%;
+}
+
+section ::-moz-placeholder {
+  font-size: 1.2rem;
+  font-family: "League Spartan", sans-serif;
+}
+
+section ::placeholder {
+  font-size: 1.2rem;
+  font-family: "League Spartan", sans-serif;
+}
+
+.welcome-message {
+  background-color: #F2AF05;
+}
+.welcome-message p {
+  font-family: "League Spartan", sans-serif;
+  color: white;
+  font-size: 1.6rem;
+  padding: 0px 70px;
+}
+
+.login-inputs {
+  padding: 0px 70px;
+  position: relative;
+}
+.login-inputs .error-message {
+  width: 100%;
+  height: 15px;
+}
+.login-inputs .register-link {
+  font-family: "League Spartan", sans-serif;
+  color: #F2AF05;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.login-inputs a {
+  font-family: "League Spartan", sans-serif;
+  color: #2D4583;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 7px;
+  font-family: "League Spartan", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: white;
+  background-color: #F2AF05;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+html {
+  /* 1rem = 10px */
+  font-size: 62.5%;
+}/*# sourceMappingURL=login.css.map */

@@ -1,0 +1,112 @@
+@use '../../utils/mixins' as *;
+@use '../../utils/variables' as *;
+
+main {
+    @include flex(center, stretch);
+    flex-direction: row;
+    max-width: 60%;
+    min-height: 70%;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    overflow: hidden;
+}
+
+img {
+    max-width: 75%;
+}
+
+body {
+    height: 100vh;
+    @include flex(center, center);
+}
+
+section {
+    width: 50%;
+    @include flex(center, center);
+    flex-direction: column;
+
+    h1 {
+        font-family: $TitleFont;
+        color: $yellow;
+        font-size: 2.7rem;
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        font-family: $TitleFont;
+        color: $blue;
+        font-size: 2.4rem;
+        align-self: flex-start;
+        padding: 0px 70px;
+        margin-bottom: 5px;
+    }
+}
+
+section input {
+    border: 1px solid $gray;
+    border-radius: 7px;
+    padding: 10px 7px;
+    height: 33px;
+    width: 100%;
+}
+
+form {
+    width: 100%;
+}
+
+div {
+    width: 100%;
+}
+
+section ::placeholder {
+    font-size: 1.2rem;
+    font-family: $ParagFont;
+}
+
+.welcome-message {
+    background-color: $yellow;
+    p {
+        font-family: $ParagFont;
+        color: white;
+        font-size: 1.6rem;
+        padding: 0px 70px;
+    }
+}
+
+.login-inputs {
+
+    padding: 0px 70px;
+    position: relative;
+
+    .error-message {
+        width: 100%;
+        height: 15px;
+    }
+
+    .register-link {
+        font-family: $ParagFont;
+        color:$yellow;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 20px;
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+    a {
+        font-family: $ParagFont;
+        color: $blue;
+    }
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 7px;
+    font-family: $ParagFont;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: white;
+    background-color: $yellow;
+    @include flex (center, center);
+    margin-top: 5px;
+}

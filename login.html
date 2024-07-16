@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="/css/login.css">
     <title>Document</title>
 </head>
 
@@ -11,7 +11,7 @@
 
     <main>
 
-        <section>
+        <section class="login-inputs">
 
             <h1>CashTrack</h1>
 
@@ -19,23 +19,23 @@
 
                 <div>
                     <input type="text" name="usuario" id="usuario" placeholder="Usuário" required>
-                    <p></p>
+                    <p class="error-message"></p>
                 </div>
 
                 <div>
                     <input type="text" name="senha" id="senha" placeholder="Senha" required>
-                    <p></p>
+                    <p class="error-message"></p>
                 </div>
 
                 <button type="submit">Entrar</button>
 
             </form>
 
-            <p>Não possui uma conta ainda? <a href="">Cadastre-se aqui!</a></p>
+            <p class="register-link">Não possui uma conta ainda? <a href="">Cadastre-se aqui!</a></p>
 
         </section>
 
-        <section>
+        <section class="welcome-message">
 
             <img src="./images/financas.png" alt="Imagem de mãos realizando cálculos.">
 

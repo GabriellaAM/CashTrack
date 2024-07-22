@@ -29,7 +29,7 @@ section {
         font-family: $TitleFont;
         color: $yellow;
         font-size: 2.7rem;
-        margin-bottom: 15px;
+        margin-bottom: 1.5rem;
     }
 
     h2 {
@@ -37,16 +37,16 @@ section {
         color: $blue;
         font-size: 2.4rem;
         align-self: flex-start;
-        padding: 0px 70px;
-        margin-bottom: 5px;
+        padding: 0px 7rem;
+        margin-bottom: 0.5rem;
     }
 }
 
 section input {
     border: 1px solid $gray;
-    border-radius: 7px;
-    padding: 10px 7px;
-    height: 33px;
+    border-radius: 0.7rem;
+    padding: 1rem 0.7rem;
+    height: 3.3rem;
     width: 100%;
 }
 
@@ -69,18 +69,18 @@ section ::placeholder {
         font-family: $ParagFont;
         color: white;
         font-size: 1.6rem;
-        padding: 0px 70px;
+        padding: 0px 7rem;
     }
 }
 
 .login-inputs {
 
-    padding: 0px 70px;
+    padding: 0px 7rem;
     position: relative;
 
     .error-message {
         width: 100%;
-        height: 15px;
+        height: 1.5rem;
     }
 
     .register-link {
@@ -88,7 +88,7 @@ section ::placeholder {
         color:$yellow;
         position: absolute;
         bottom: 0;
-        margin-bottom: 20px;
+        margin-bottom: 2rem;
         font-size: 1.3rem;
         font-weight: 500;
     }
@@ -100,13 +100,13 @@ section ::placeholder {
 
 button {
     width: 100%;
-    padding: 10px;
-    border-radius: 7px;
+    padding: 1rem;
+    border-radius: 0.7rem;
     font-family: $ParagFont;
     font-size: 1.6rem;
     font-weight: 500;
     color: white;
     background-color: $yellow;
     @include flex (center, center);
-    margin-top: 5px;
+    margin-top: 0.5rem;
 }

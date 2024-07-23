@@ -25,9 +25,13 @@ header .headerContent-Wrapper .headerUser-Wrapper {
   width: 100%;
   gap: 1rem;
 }
+header .headerContent-Wrapper .headerUser-Wrapper button {
+  background-color: transparent;
+}
 
-header .headerContent-Wrapper .headerUser-Wrapper img {
+header .headerContent-Wrapper .headerUser-Wrapper button img {
   width: clamp(2rem, 2.5vw, 2.5rem);
+  cursor: pointer;
 }
 
 header .headerContent-Wrapper {

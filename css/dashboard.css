@@ -1,1 +1,56 @@
-/*# sourceMappingURL=dashboard.css.map */
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+html {
+  /* 1rem = 10px */
+  font-size: 62.5%;
+}
+
+header .headerContent-Wrapper .headerUser-Wrapper h1 {
+  color: #F2AF05;
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+}
+
+header .headerContent-Wrapper .headerUser-Wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  gap: 1rem;
+}
+
+header .headerContent-Wrapper .headerUser-Wrapper img {
+  width: clamp(2rem, 2.5vw, 2.5rem);
+}
+
+header .headerContent-Wrapper {
+  margin: 0px 5rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header .headerContent-Wrapper p {
+  width: 100%;
+  font-family: "League Spartan", sans-serif;
+  margin: 0px 0px 0px 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2D4583;
+}
+
+header {
+  background-color: white;
+  margin: 4rem 3.5rem 0px 3.5rem;
+  height: 15rem;
+  border-radius: 0.9rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}/*# sourceMappingURL=dashboard.css.map */

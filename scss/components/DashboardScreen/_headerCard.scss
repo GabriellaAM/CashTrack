@@ -1,0 +1,43 @@
+@use '../../utils/mixins' as *;
+@use '../../utils/variables' as *;
+
+header .headerContent-Wrapper .headerUser-Wrapper h1 {
+    color: $yellow;
+    font-family: $TitleFont;
+    font-size: 3rem;
+}
+
+header .headerContent-Wrapper .headerUser-Wrapper {
+    @include flex (flex-start, center);
+    flex-direction: row;
+    width: 100%;
+    gap: 1rem;
+}
+
+header .headerContent-Wrapper .headerUser-Wrapper img {
+    width: clamp(2rem, 2.5vw, 2.5rem);
+}
+
+header .headerContent-Wrapper {
+    margin: 0px 5rem;
+    height: 100%;
+    @include flex (center, center);
+    flex-direction: column;
+
+    p {
+        width: 100%;
+        font-family: $ParagFont;
+        margin: 0px 0px 0px 1rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: $blue;
+    }
+}
+
+header {
+    background-color: white;
+    margin: 4rem 3.5rem 0px 3.5rem;
+    height: 15rem;
+    border-radius: 0.9rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}

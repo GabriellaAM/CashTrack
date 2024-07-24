@@ -1,0 +1,68 @@
+@use '../../utils/mixins' as *;
+@use '../../utils/variables' as *;
+
+main .money-cards-wrapper {
+    @include flex(space-between,stretch);
+    flex-direction: row;
+    margin: 3rem 15rem;
+}
+
+main .money-cards-wrapper .total-card {
+    @include flex(center, flex-start);
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 3.5rem 3rem;
+    background-color: $yellow;
+    border-radius: 0.9rem;
+    width: 30%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    h3 {
+        font-family: $TitleFont;
+        color: $blue;
+        font-weight: 800;
+        font-size: clamp(1.3rem, 2vw, 1.8rem);
+    }
+
+    p {
+        font-family: $ParagFont;
+        color: white;
+        font-size: 4.5rem;
+        font-weight:700;
+    }
+}
+
+main .money-cards-wrapper .income-expense-card {
+    @include flex(center, flex-start);
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 3.5rem 3rem;
+    background-color: white;
+    border-radius: 0.9rem;
+    width: 31.5%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    p {
+        font-family: $ParagFont;
+        color: $yellow;
+        font-size: 4rem;
+        font-weight: 640;
+    }
+}
+
+main .money-cards-wrapper .income-expense-card .income-expense-title-wrapper {
+    @include flex(center, center);
+    margin: 0px 0px 0px 0px;
+    gap: 1rem;
+
+    img {
+        width: 1.7rem;
+    }
+
+    h3 {
+        font-family: $TitleFont;
+        font-size: 1.53rem;
+        color: $blue;
+    }
+}
+

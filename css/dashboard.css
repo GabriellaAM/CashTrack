@@ -14,7 +14,7 @@ html {
 header .headerContent-Wrapper .headerUser-Wrapper h1 {
   color: #F2AF05;
   font-family: "Poppins", sans-serif;
-  font-size: 3rem;
+  font-size: 3.7rem;
 }
 
 header .headerContent-Wrapper .headerUser-Wrapper {
@@ -46,15 +46,83 @@ header .headerContent-Wrapper p {
   width: 100%;
   font-family: "League Spartan", sans-serif;
   margin: 0px 0px 0px 1rem;
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   font-weight: 600;
   color: #2D4583;
 }
 
 header {
   background-color: white;
-  margin: 4rem 3.5rem 0px 3.5rem;
-  height: 15rem;
+  margin: 6rem 15rem 0px 15rem;
+  height: 16rem;
   border-radius: 0.9rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+main .money-cards-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-direction: row;
+  margin: 3rem 15rem;
+}
+
+main .money-cards-wrapper .total-card {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 3.5rem 3rem;
+  background-color: #F2AF05;
+  border-radius: 0.9rem;
+  width: 30%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+main .money-cards-wrapper .total-card h3 {
+  font-family: "Poppins", sans-serif;
+  color: #2D4583;
+  font-weight: 800;
+  font-size: clamp(1.3rem, 2vw, 1.8rem);
+}
+main .money-cards-wrapper .total-card p {
+  font-family: "League Spartan", sans-serif;
+  color: white;
+  font-size: 4.5rem;
+  font-weight: 700;
+}
+
+main .money-cards-wrapper .income-expense-card {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 3.5rem 3rem;
+  background-color: white;
+  border-radius: 0.9rem;
+  width: 31.5%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+main .money-cards-wrapper .income-expense-card p {
+  font-family: "League Spartan", sans-serif;
+  color: #F2AF05;
+  font-size: 4rem;
+  font-weight: 640;
+}
+
+main .money-cards-wrapper .income-expense-card .income-expense-title-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px 0px 0px;
+  gap: 1rem;
+}
+main .money-cards-wrapper .income-expense-card .income-expense-title-wrapper img {
+  width: 1.7rem;
+}
+main .money-cards-wrapper .income-expense-card .income-expense-title-wrapper h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.53rem;
+  color: #2D4583;
 }/*# sourceMappingURL=dashboard.css.map */

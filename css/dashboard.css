@@ -229,7 +229,7 @@ main .history-table-wrapper .history-table-section-title-wrapper h2 {
   align-items: center;
   position: fixed;
   bottom: 3.5rem;
-  right: 5rem;
+  right: 4rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   cursor: pointer;
 }

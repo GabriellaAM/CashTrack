@@ -1,0 +1,19 @@
+@use '../../utils/mixins' as *;
+@use '../../utils/variables' as *;
+
+.add-operation-button {
+    background-color: $yellow;
+    padding: 1.7rem;
+    border-radius: 50%;
+    @include flex(center, center);
+    position: fixed;
+    bottom: 3.5rem; 
+    right: 5rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+
+
+    img {
+        width: 2.5rem;
+    }
+}

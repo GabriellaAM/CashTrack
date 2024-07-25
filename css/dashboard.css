@@ -218,4 +218,21 @@ main .history-table-wrapper .history-table-section-title-wrapper h2 {
 }
 .edit-delete-button-wrapper button img {
   width: 1.5rem;
+}
+
+.add-operation-button {
+  background-color: #F2AF05;
+  padding: 1.7rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 3.5rem;
+  right: 5rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+}
+.add-operation-button img {
+  width: 2.5rem;
 }/*# sourceMappingURL=dashboard.css.map */

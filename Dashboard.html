@@ -45,14 +45,14 @@
             </section>
         </section>
 
-        <section>
-            <div>
+        <section class="history-table-wrapper">
+            <div class="history-table-section-title-wrapper">
                 <h2>Histórico</h2>
             </div>
 
-            <table>
-                <thead>
-                    <tr>
+            <table class="table-wrapper">
+                <thead class="table-history-thead-wrapper">
+                    <tr class="table-history-thead-row-wrapper">
                         <th>Operação</th>
                         <th>Data</th>
                         <th>Nome</th>
@@ -60,11 +60,14 @@
                         <th>Ações</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
+                <tbody class="table-history-tbody-wrapper">
+                    <tr class="table-history-tbody-row-wrapper">
                         <td>
-                            <img src="/images/SaidasIcon.png" alt="Ícone para indicar onde está a saída.">
-                            <p>Saída</p>
+                            <div class="icon-operation-wrapper">
+                                <img src="/images/SaidasIcon.png" alt="Ícone para indicar onde está a saída."
+                                    class="income-expense-icon">
+                                <p>Saída</p>
+                            </div>
                         </td>
                         <td>
                             <p>25/04/2020</p>
@@ -72,22 +75,25 @@
                         <td>
                             <p>Conta de Luz</p>
                         </td>
-                        <td>
+                        <td class="money-column">
                             <p>-75,00</p>
                         </td>
                         <td>
-                            <button><img src="/images/EditIcon.png"
-                                    alt="Ícone de lápis para indicar a ação de edição da operação adicionada por meio do clique no botão."></button>
-                            <button><img src="/images/DeleteIcon.png"
-                                    alt="Ícone de lixeira para indicar a ação de deletar a operação adicionada por meio do clique no botão."></button>
+                            <div class="edit-delete-button-wrapper">
+                                <button><img src="/images/EditIcon.png"
+                                        alt="Ícone de lápis para indicar a ação de edição da operação adicionada por meio do clique no botão."></button>
+                                <button><img src="/images/DeleteIcon.png"
+                                        alt="Ícone de lixeira para indicar a ação de deletar a operação adicionada por meio do clique no botão."></button>
+                            </div>
                         </td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
-        <button><img src="/images/PlusIcon.png"
-                alt='Ícone de sinal "mais" para indicar a ação de adicionar uma operação de entrada ou saída após o clique no botão.'></button>
+        <button class="add-operation-button"><img src="/images/PlusIcon.png"
+            alt='Ícone de sinal "mais" para indicar a ação de adicionar uma operação de entrada ou saída após o clique no botão.'></button>
+
     </main>
 
 </body>

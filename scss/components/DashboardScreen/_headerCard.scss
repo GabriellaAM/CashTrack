@@ -19,7 +19,7 @@ header .headerContent-Wrapper .headerUser-Wrapper {
 }
 
 header .headerContent-Wrapper .headerUser-Wrapper button img {
-    width: clamp(2rem, 2.5vw, 2.5rem);
+    width: clamp(2rem, 2.5vw, 2.67rem);
     cursor: pointer;
 }
 
@@ -41,7 +41,7 @@ header .headerContent-Wrapper {
 
 header {
     background-color: white;
-    margin: 6rem 15rem 0px 15rem;
+    margin: 4.5rem 15rem 0px 15rem;
     height: 16rem;
     border-radius: 0.9rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;

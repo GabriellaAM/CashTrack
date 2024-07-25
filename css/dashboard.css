@@ -11,6 +11,10 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  height: 100vh;
+}
+
 header .headerContent-Wrapper .headerUser-Wrapper h1 {
   color: #F2AF05;
   font-family: "Poppins", sans-serif;
@@ -30,7 +34,7 @@ header .headerContent-Wrapper .headerUser-Wrapper button {
 }
 
 header .headerContent-Wrapper .headerUser-Wrapper button img {
-  width: clamp(2rem, 2.5vw, 2.5rem);
+  width: clamp(2rem, 2.5vw, 2.67rem);
   cursor: pointer;
 }
 
@@ -53,7 +57,7 @@ header .headerContent-Wrapper p {
 
 header {
   background-color: white;
-  margin: 6rem 15rem 0px 15rem;
+  margin: 4.5rem 15rem 0px 15rem;
   height: 16rem;
   border-radius: 0.9rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -125,4 +129,93 @@ main .money-cards-wrapper .income-expense-card .income-expense-title-wrapper h3 
   font-family: "Poppins", sans-serif;
   font-size: 1.53rem;
   color: #2D4583;
+}
+
+.history-table-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 0px 15rem 0px 15rem;
+  padding: 3rem 5rem;
+  background-color: white;
+  gap: 2rem;
+  border-radius: 0.9rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+main .history-table-wrapper .history-table-section-title-wrapper h2 {
+  font-size: 4.5rem;
+  font-weight: 630;
+  font-family: "Poppins", sans-serif;
+  color: #F2AF05;
+}
+
+.table-wrapper {
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 0.9rem;
+}
+
+.table-history-thead-wrapper {
+  background-color: #F2AF05;
+  border-radius: 0.9rem;
+}
+
+.table-history-thead-row-wrapper th {
+  font-family: "League Spartan", sans-serif;
+  color: white;
+  font-weight: 500;
+  font-size: 1.53rem;
+  padding: 0.9rem 0px;
+  width: 20%;
+}
+.table-history-thead-row-wrapper th:not(:last-child) {
+  border-right: 1px solid white;
+}
+.table-history-thead-row-wrapper th:first-child {
+  border-top-left-radius: 0.9rem;
+}
+.table-history-thead-row-wrapper th:last-child {
+  border-top-right-radius: 0.9rem;
+}
+
+.table-history-tbody-row-wrapper td {
+  text-align: center;
+  vertical-align: middle;
+  font-family: "League Spartan", sans-serif;
+  color: #2D4583;
+  font-size: 1.4rem;
+  padding: 3rem 0px 0px 0px;
+}
+
+.income-expense-icon {
+  width: 1.3rem;
+}
+
+.table-history-tbody-row-wrapper .icon-operation-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.money-column {
+  color: #F2AF05 !important;
+}
+
+.edit-delete-button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.46rem;
+}
+.edit-delete-button-wrapper button {
+  background-color: #F2AF05;
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+.edit-delete-button-wrapper button img {
+  width: 1.5rem;
 }/*# sourceMappingURL=dashboard.css.map */

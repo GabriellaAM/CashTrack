@@ -70,11 +70,13 @@ div {
 section ::-moz-placeholder {
   font-size: 1.2rem;
   font-family: "League Spartan", sans-serif;
+  color: #B5B5B5;
 }
 
 section ::placeholder {
   font-size: 1.2rem;
   font-family: "League Spartan", sans-serif;
+  color: #B5B5B5;
 }
 
 .welcome-message {

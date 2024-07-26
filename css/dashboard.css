@@ -15,13 +15,13 @@ body {
   height: 100vh;
 }
 
-header .headerContent-Wrapper .headerUser-Wrapper h1 {
+.dashboard-header-wrapper .headerContent-Wrapper .headerUser-Wrapper h1 {
   color: #F2AF05;
   font-family: "Poppins", sans-serif;
   font-size: 3.7rem;
 }
 
-header .headerContent-Wrapper .headerUser-Wrapper {
+.dashboard-header-wrapper .headerContent-Wrapper .headerUser-Wrapper {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -29,16 +29,16 @@ header .headerContent-Wrapper .headerUser-Wrapper {
   width: 100%;
   gap: 1rem;
 }
-header .headerContent-Wrapper .headerUser-Wrapper button {
+.dashboard-header-wrapper .headerContent-Wrapper .headerUser-Wrapper button {
   background-color: transparent;
 }
 
-header .headerContent-Wrapper .headerUser-Wrapper button img {
+.dashboard-header-wrapper .headerContent-Wrapper .headerUser-Wrapper button img {
   width: clamp(2rem, 2.5vw, 2.67rem);
   cursor: pointer;
 }
 
-header .headerContent-Wrapper {
+.dashboard-header-wrapper .headerContent-Wrapper {
   margin: 0px 5rem;
   height: 100%;
   display: flex;
@@ -46,7 +46,7 @@ header .headerContent-Wrapper {
   align-items: center;
   flex-direction: column;
 }
-header .headerContent-Wrapper p {
+.dashboard-header-wrapper .headerContent-Wrapper p {
   width: 100%;
   font-family: "League Spartan", sans-serif;
   margin: 0px 0px 0px 1rem;
@@ -55,7 +55,7 @@ header .headerContent-Wrapper p {
   color: #2D4583;
 }
 
-header {
+.dashboard-header-wrapper {
   background-color: white;
   margin: 4.5rem 15rem 0px 15rem;
   height: 16rem;
@@ -235,4 +235,115 @@ main .history-table-wrapper .history-table-section-title-wrapper h2 {
 }
 .add-operation-button img {
   width: 2.5rem;
+}
+
+.modal-backdrop {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.add-operation-form-wrapper {
+  position: fixed;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+}
+
+.add-operation-form-close-button-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.add-operation-form-title-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-operation-form-wrapper h1 {
+  font-family: "Poppins", sans-serif;
+  color: #F2AF05;
+  margin-bottom: 1.5rem;
+  font-size: clamp(1.4rem, 3vw, 2.7rem);
+  font-weight: 600;
+}
+
+.add-operation-form-wrapper input {
+  outline: none;
+  border: 1px solid #B5B5B5;
+  border-radius: 0.6rem;
+  padding: 1.5rem 0.7rem;
+  height: 3.8rem;
+  width: 100%;
+  font-family: "League Spartan", sans-serif;
+}
+.add-operation-form-wrapper input:not(#datepicker) {
+  margin-bottom: 1.5rem;
+}
+.add-operation-form-wrapper input:focus {
+  border: 1px solid #F2AF05;
+}
+.add-operation-form-wrapper input::-moz-placeholder {
+  font-size: 1.3rem;
+  font-family: "League Spartan", sans-serif;
+  color: #B5B5B5;
+}
+.add-operation-form-wrapper input::placeholder {
+  font-size: 1.3rem;
+  font-family: "League Spartan", sans-serif;
+  color: #B5B5B5;
+}
+
+.date-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.dateinputfocused {
+  border: 1px solid #F2AF05;
+}
+
+.date-wrapper .calendar-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 1.8rem;
+}
+
+.operation-button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1.5rem;
+}
+.operation-button-wrapper button {
+  width: 50%;
+  padding: 1.3rem;
+  border-radius: 0.7rem;
+  font-family: "League Spartan", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #F2AF05;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  border: 2px solid #F2AF05;
 }/*# sourceMappingURL=dashboard.css.map */

@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/dashboard.css">
-    <title>CashTrack | Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.8.0/css/pikaday.min.css">
+</head>
+<link rel="stylesheet" href="./css/dashboard.css">
+<title>CashTrack | Dashboard</title>
 </head>
 
 <body>
 
-    <header>
+    <header class="dashboard-header-wrapper">
         <div class="headerContent-Wrapper">
             <div class="headerUser-Wrapper">
                 <h1>Olá, Gabriella!</h1>
@@ -92,9 +94,42 @@
         </section>
 
         <button class="add-operation-button"><img src="/images/PlusIcon.png"
-            alt='Ícone de sinal "mais" para indicar a ação de adicionar uma operação de entrada ou saída após o clique no botão.'></button>
+                alt='Ícone de sinal "mais" para indicar a ação de adicionar uma operação de entrada ou saída após o clique no botão.'></button>
 
     </main>
+
+    <div id="modalBackdrop" class="modal-backdrop"></div>
+
+    <div class="add-operation-form-wrapper">
+        <header class="add-operation-form-header">
+            <div class="add-operation-form-close-button-wrapper">
+                <button><img src="./images/closeModalIcon.png"
+                        alt="Ícone em formato de x que ao ser clicado a modal é fechada."></button>
+            </div>
+
+            <div class="add-operation-form-title-wrapper">
+                <h1>Cadastrar Transação</h1>
+            </div>
+        </header>
+
+        <form action="" method="post">
+            <input type="text" name="nome" id="nome" placeholder="Nome da Transação">
+            <div class="date-wrapper">
+                <input type="text" name="data" id="datepicker" placeholder="DD/MM/YYYY">
+                <img src="./images/calendarIcon.png" alt="Ícone de calendário que ao ser clicado permite a escolha da data em que a transação ocorreu." class="calendar-icon">
+            </div>
+            <input type="number" name="valor" id="valor" placeholder="Valor da Transação">
+            <fieldset class="operation-button-wrapper">
+                <button class="operation-button" id="income">Entrada</button>
+                <button class="operation-button" id="expense">Saída</button>
+            </fieldset>
+            <button class="Register">Cadastrar</button>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.8.0/pikaday.min.js"></script>
+    <script src="./dateInput.js"></script>
 
 </body>
 

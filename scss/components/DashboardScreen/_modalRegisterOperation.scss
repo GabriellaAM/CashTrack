@@ -1,0 +1,106 @@
+@use '../../utils/mixins' as *;
+@use '../../utils/variables' as *;
+
+.modal-backdrop {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.add-operation-form-wrapper {
+    position: fixed;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+}
+
+.add-operation-form-close-button-wrapper {
+    width: 100%;
+    @include flex(flex-end, center);
+}
+
+.add-operation-form-title-wrapper {
+    width: 100%;
+    @include flex(center, center);
+}
+
+.add-operation-form-wrapper h1 {
+    font-family: $TitleFont;
+    color: $yellow;
+    margin-bottom: 1.5rem;
+    font-size: clamp(1.4rem, 3vw, 2.7rem);
+    font-weight: 600;
+}
+
+.add-operation-form-wrapper input {
+    outline: none;
+    border: 1px solid $gray;
+    border-radius: 0.6rem;
+    padding: 1.5rem 0.7rem;
+    height: 3.8rem;
+    width: 100%;
+    font-family: $ParagFont;
+
+    &:not(#datepicker) {
+        margin-bottom: 1.5rem;
+    }
+
+    &:focus {
+        border: 1px solid $yellow;
+    }
+
+    &::placeholder {
+        font-size: 1.3rem;
+        font-family: $ParagFont;
+        color: $gray;
+    }
+
+}
+
+.date-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.dateinputfocused {
+    border: 1px solid $yellow;
+}
+
+.date-wrapper .calendar-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 1.8rem;
+}
+
+.operation-button-wrapper {
+    @include flex(center, center);
+    width: 100%;
+    gap: 1.5rem;
+
+    button {
+        width: 50%;
+        padding: 1.3rem;
+        border-radius: 0.7rem;
+        font-family: $ParagFont;
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: $yellow;
+        background-color: white;
+        @include flex (center, center);
+        margin-top: 0.5rem;
+        cursor: pointer;
+        border: 2px solid $yellow;
+    }
+
+}

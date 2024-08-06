@@ -18,11 +18,23 @@
     top: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
+    width: clamp(25rem, 35vw, 38rem);
+    padding: 2.5vw 2vw;
+    border-radius: 0.9rem;
 }
 
 .add-operation-form-close-button-wrapper {
     width: 100%;
     @include flex(flex-end, center);
+}
+
+.close-button {
+    background-color: transparent;
+
+    img {
+        width: 1.7rem;
+        cursor: pointer;
+    }
 }
 
 .add-operation-form-title-wrapper {
@@ -34,7 +46,7 @@
     font-family: $TitleFont;
     color: $yellow;
     margin-bottom: 1.5rem;
-    font-size: clamp(1.4rem, 3vw, 2.7rem);
+    font-size: clamp(1.4rem, 3vw, 2.3rem);
     font-weight: 600;
 }
 
@@ -87,6 +99,7 @@
     @include flex(center, center);
     width: 100%;
     gap: 1.5rem;
+    margin-bottom: 1.5rem;
 
     button {
         width: 50%;
@@ -103,4 +116,19 @@
         border: 2px solid $yellow;
     }
 
+}
+
+.add-operation-form-wrapper .Register {
+
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 0.7rem;
+    font-family: $ParagFont;
+    font-size: 2.3rem;
+    font-weight: 500;
+    color: white;
+    background-color: $yellow;
+    @include flex (center, center);
+    margin-top: 0.5rem;
+    cursor: pointer;
 }

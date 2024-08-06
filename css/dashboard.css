@@ -254,6 +254,9 @@ main .history-table-wrapper .history-table-section-title-wrapper h2 {
   top: 50%;
   transform: translate(-50%, -50%);
   background-color: white;
+  width: clamp(25rem, 35vw, 38rem);
+  padding: 2.5vw 2vw;
+  border-radius: 0.9rem;
 }
 
 .add-operation-form-close-button-wrapper {
@@ -261,6 +264,14 @@ main .history-table-wrapper .history-table-section-title-wrapper h2 {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+
+.close-button {
+  background-color: transparent;
+}
+.close-button img {
+  width: 1.7rem;
+  cursor: pointer;
 }
 
 .add-operation-form-title-wrapper {
@@ -274,7 +285,7 @@ main .history-table-wrapper .history-table-section-title-wrapper h2 {
   font-family: "Poppins", sans-serif;
   color: #F2AF05;
   margin-bottom: 1.5rem;
-  font-size: clamp(1.4rem, 3vw, 2.7rem);
+  font-size: clamp(1.4rem, 3vw, 2.3rem);
   font-weight: 600;
 }
 
@@ -330,6 +341,7 @@ main .history-table-wrapper .history-table-section-title-wrapper h2 {
   align-items: center;
   width: 100%;
   gap: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 .operation-button-wrapper button {
   width: 50%;
@@ -346,4 +358,20 @@ main .history-table-wrapper .history-table-section-title-wrapper h2 {
   margin-top: 0.5rem;
   cursor: pointer;
   border: 2px solid #F2AF05;
+}
+
+.add-operation-form-wrapper .Register {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.7rem;
+  font-family: "League Spartan", sans-serif;
+  font-size: 2.3rem;
+  font-weight: 500;
+  color: white;
+  background-color: #F2AF05;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+  cursor: pointer;
 }/*# sourceMappingURL=dashboard.css.map */
